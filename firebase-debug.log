@@ -1,0 +1,47 @@
+[debug] [2023-06-08T15:40:54.858Z] ----------------------------------------------------------------------
+[debug] [2023-06-08T15:40:54.860Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anoar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-08T15:40:54.861Z] CLI Version:   12.3.0
+[debug] [2023-06-08T15:40:54.861Z] Platform:      win32
+[debug] [2023-06-08T15:40:54.861Z] Node Version:  v18.14.2
+[debug] [2023-06-08T15:40:54.862Z] Time:          Thu Jun 08 2023 18:40:54 GMT+0300 (غرينتش+٠٣:٠٠)
+[debug] [2023-06-08T15:40:54.863Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-08T15:40:54.930Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-08T15:40:54.930Z] > authorizing via signed-in user (anwar98.kn@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  G:\Study\Tasks\React-js\Project 1 amazon clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-06-08T15:41:00.443Z] Using project from CLI flag: clone-48d91
+[debug] [2023-06-08T15:41:00.445Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-48d91 [none]
+[debug] [2023-06-08T15:41:01.384Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-48d91 200
+[debug] [2023-06-08T15:41:01.384Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-48d91 {"projectId":"clone-48d91","projectNumber":"1055482814491","displayName":"amazon-clone","name":"projects/clone-48d91","resources":{"hostingSite":"clone-48d91"},"state":"ACTIVE","etag":"1_511edea5-19a7-4eeb-8c4a-2ee987955171"}
+[info] i  Using project clone-48d91 (amazon-clone) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Didn't detect a .git folder. Assuming G:\Study\Tasks\React-js\Project 1 amazon clone is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1159463&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
