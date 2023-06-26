@@ -1,10 +1,12 @@
 import React from "react";
 import CheckoutProduct from "./CheckoutProduct";
-import CurrencyFormat from "react-currency-format";
 import style from "./Order.module.css";
 import { getBasketTotal } from "../context/AppReducer";
 
 const Order = ({ basket }) => {
+  function currencyFormat(num) {
+    return "$" + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+  }
   return (
     <div className={style.order}>
       {basket?.map((item) => (
@@ -18,18 +20,9 @@ const Order = ({ basket }) => {
           hiddenButton
         />
       ))}
-      <CurrencyFormat
-        renderText={(value) => (
-          <>
-            <h3 className={style.orderTotal}>Order Total: {value}</h3>
-          </>
-        )}
-        decimalScale={2}
-        value={getBasketTotal(basket)}
-        displayType="text"
-        thousandSeparator={true}
-        prefix={"$"}
-      />
+      <h3 className={style.orderTotal}>
+        Order Total: {currencyFormat(getBasketTotal(basket))}
+      </h3>
     </div>
   );
 };
